@@ -1,0 +1,84 @@
+<svelte:head>
+	<title>My Resume</title>
+</svelte:head>
+<body>
+    
+    <h1>Resume</h1>
+    <!--<label class ="color-scheme">
+        "Theme: "
+        <select>
+         <option value ="light dark">Automatic</option>
+         <option value ="light">Light</option>
+         <option value ="dark">Dark</option>
+        </select>
+    </label>-->
+    <!--<nav class="menu">
+        <a class = "nav" target="_blank"href="index.html">Home</a>
+        <a class = "nav" target="_blank"href="contact/index.html">Contact</a>
+        <a class = "nav" target="_blank"href="projects/index.html">Projects</a>
+        <a class = "current" target="_blank"href="resume.html">Resume</a>
+        <a class = "nav" target="_blank"href="https://github.com/Szheng2324">GitHub</a>
+
+    </nav>-->
+    
+    <section>
+        <h2><u>Education</u></h2>
+        <h3>Wellesley College </h3>
+        <h5 class="time">September 2023</h5>
+        <p>Candidate for Bachelor of Arts in Computer Science and East Asian Studies</p>
+
+    </section>
+    <section>
+        <h2><u>Experience</u></h2>
+        <h3>National Security Language Initiative for Youth, Seoul, South Korea</h3>
+        <h5 class="time">September 2023</h5>
+        <p>U.S. Department of State program to foster international cooperation in Korea through intensive language classes, cultural clubs, volunteering and career development activities.</p>
+        <ul>
+            <li>Received a merit-based scholarship to take intensive Korean classes at Hanyang University.</li>
+            <li>Studied at Daewon Foreign Language High School; assisted in English class.</li>
+            <li>Volunteered at a Korean elementary school to teach students American games and dances.</li>
+            <li>Delivered coal briquettes for underprivileged Korean communities during the winter.</li>
+        </ul>
+        
+        <h3>Hanmi Research Project, Seoul, South Korea</h3>
+        <h5 class="time">September 2023</h5>
+        <ul>
+            <li>Researched and presented the topic of the Korean War to members of the state department and
+                International Education and Resource Network.</li>
+            <li>Visited the Memorial Hall for Incheon Landing Operation, took a tour of the War Memorial of Korea,
+                and US Army Garrison Yongsan.</li>
+            <li>Conducted interviews with history professors from Yonsei University and Korean college students on
+                their views about the Korean War.</li>
+        </ul>
+    </section>
+    <section>
+        <h2><u>Leadership &amp; Community Engagement</u></h2>
+        <h3>Wellesley College Varsity Crew</h3>
+        <h5 class="time">September 2023</h5>
+        <ul>
+            <li>Participated in 15+ hours weekly practice, lifts and developed strong connections with team and coaches.</li>
+            
+        </ul>
+
+        <h3>American Red Cross</h3>
+        <h5 class="time">September 2023</h5>
+        <ul>
+            <li>Lead Summit High School blood drive and recruited more than 90 donors and 15 volunteers.</li>
+            <li>Promoted blood drive through social media and presentations several times weekly.</li>
+
+        </ul>
+
+
+    </section>
+    <section>
+        <h2><u>Skills</u></h2>
+        <ul>
+            <li>First Aid/CPR</li>
+            <li>Oregon Seal of Biliteracy in Mandarin Chinese</li>
+            <li>Intermediate-High proficiency in Korean (2023)</li>
+            <li>Certified level 10 in Piano (Oregon Music Teachers Association)</li>
+        </ul>
+
+    </section>
+
+</body>
