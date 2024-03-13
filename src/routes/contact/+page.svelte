@@ -1,5 +1,5 @@
 
-<body>
+
     <h1>Contact</h1>
     <!--<label class ="color-scheme">
         "Theme: "
@@ -30,4 +30,3 @@
 
     </form>
 
-</body>

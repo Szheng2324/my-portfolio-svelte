@@ -20,13 +20,11 @@ document.body.prepend(nav);
 for (let p of pages) {
 	let url = p.url;
 	let title = p.title;
-    //if (!ARE_WE_HOME && !url.startsWith("http")) {
-        //url = "../" + url;
-    //}
+   
     let a = document.createElement("a");
     a.href = url;
     a.textContent = title;
-    console.log(a.host, location.host, a.pathname, location.pathname)
+    // console.log(a.host, location.host, a.pathname, location.pathname)
     //a.classList.add("nav");
     if (a.host === location.host && a.pathname === location.pathname) {
         a.classList.add("current");
@@ -37,7 +35,7 @@ for (let p of pages) {
     nav.append(a);
 }
 
-document.body.insertAdjacentHTML("afterbegin", `
+/*document.body.insertAdjacentHTML("afterbegin", `
 	<label class="color-scheme">
 		Theme:
 		<select>
@@ -57,4 +55,4 @@ select.addEventListener("input", function (event) {
 if("colorScheme" in localStorage){
     document.documentElement.style.setProperty("color-scheme", localStorage.colorScheme);
     select.value = localStorage.colorScheme;
-}
+}*/

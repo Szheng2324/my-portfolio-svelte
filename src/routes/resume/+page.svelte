@@ -1,7 +1,7 @@
 <svelte:head>
 	<title>My Resume</title>
 </svelte:head>
-<body>
+
     
     <h1>Resume</h1>
     <!--<label class ="color-scheme">
@@ -81,4 +81,3 @@
 
     </section>
 
-</body>
