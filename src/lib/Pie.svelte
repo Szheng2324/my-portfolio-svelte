@@ -10,17 +10,13 @@
         arcData = sliceGenerator(data);
         arcs = arcData.map(d => arcGenerator(d));
     }
-   export let selectedIndex = -1;
+    export let selectedIndex = -1;
     function toggleWedge (index, event) {
         if (!event.key || event.key === "Enter") {
-            selectedIndex = index;
-        }
-    }
-
-   
+            selectedIndex = selectedIndex === index ? -1 : index;
+        } 
+    } 
 </script>
-
-
 <style>
    svg {
         max-width: 20em;
@@ -29,8 +25,8 @@
         /* Do not clip shapes outside the viewBox */
         overflow: visible;
     }
-    svg:has(path:hover) {
-        path:not(:hover) {
+    svg:has(path:hover, path:focus-visible) {
+        path:not(:hover, :focus-visible) {
             opacity: 50%;
         }
     }
@@ -83,10 +79,10 @@
 	<svg viewBox="-50 -50 100 100">
 		{#each arcs as arc, index}
             <path aria-label = "pie" role="button" tabindex ="0" d={arc} fill={ colors(index) }
-            class:selected={selectedIndex === index}
-            on:click={e => toggleWedge(index, e)}
-            on:keyup={e => toggleWedge(index, e)}
-            />
+                class:selected={selectedIndex === index}
+                on:click={e => toggleWedge(index, e)}
+                on:keyup={e => toggleWedge(index, e)}
+                />
 
         {/each}
 	</svg>
